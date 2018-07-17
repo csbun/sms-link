@@ -26,10 +26,10 @@ SMSLink.detector = SMSLink.detector || (function () {
             version = ua.substr(uaIndex + 3, 3).replace('_', '.');
         }
         else if (os === 'Android' && uaIndex > -1) {
-            os = ua.substr(uaIndex + 8, 3);
+            version = ua.substr(uaIndex + 8, 3);
         }
         else {
-            ver = null;
+            version = null;
         }
 
         return {
